@@ -1,0 +1,27 @@
+.model tiny
+.486
+.data
+DAT1 DD 2h,3h,1h,6h,5h,8h,7h,4h,9h,0Ah
+.code
+.startup
+MOV CX, 09h
+X1: LEA SI,DAT1
+MOV DX,09h
+X2:MOV EAX,[SI+4]
+CMP [SI],EAX
+JLE X3
+MOV EBX,[SI]
+MOV [SI+4],EBX
+MOV [SI],EAX
+INC SI
+INC SI
+INC SI
+INC SI
+DEC DX
+JNE X2
+JMP X4
+X3:DEC CX
+JNE X1
+X4:nop
+.exit
+end
