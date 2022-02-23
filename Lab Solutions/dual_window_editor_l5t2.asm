@@ -1,3 +1,10 @@
+; Implement a ‘dual-window ‘editor. The screen should be divided into two equal divisions. You may 
+; choose to split the screen horizontally or vertically. The first half must have a background colour 
+; of blue and foreground of yellow. The second half must have a background of white and a 
+; foreground of bright green. Use video mode 3. As the user types in characters on the keyboard, 
+; they must be simultaneously displayed on both the halves. If the user types ‘$#’, then the program 
+; must terminate and it must return to the previous video mode. 
+
 .model tiny
 .486
 .data
