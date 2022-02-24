@@ -1,3 +1,6 @@
+; Write an ALP that will take in a string of maximum 20 characters from user and display it on 
+; the next line on the screen (ASCII equivalent for newline is 0Dh (enter) followed by 0Ah (next line))
+
 .model tiny
 .486
 .data
